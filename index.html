@@ -1,0 +1,63 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <link href="pagination.css" rel="stylesheet">
+</head>
+<body>
+<div id="tablePage" class="tablePage"></div>
+<table id="myTable">
+    <thead>
+    <tr>
+        <th>订单编号</th>
+        <th>机器人序列号</th>
+        <th>交易时间</th>
+        <th>交易金额</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td><%:=list[i].sn%></td>
+        <td><%:=list[i].time%></td>
+        <td><%:=list[i].amount%></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td><%:=list[i].sn%></td>
+        <td><%:=list[i].time%></td>
+        <td><%:=list[i].amount%></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td><%:=list[i].sn%></td>
+        <td><%:=list[i].time%></td>
+        <td><%:=list[i].amount%></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td><%:=list[i].sn%></td>
+        <td><%:=list[i].time%></td>
+        <td><%:=list[i].amount%></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td><%:=list[i].sn%></td>
+        <td><%:=list[i].time%></td>
+        <td><%:=list[i].amount%></td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td><%:=list[i].sn%></td>
+        <td><%:=list[i].time%></td>
+        <td><%:=list[i].amount%></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+<script type="text/javascript" src="pagination.js"></script>
+<script type="text/javascript">
+    window.onload=function(){
+        pagination(1,2)
+    };
+</script>
